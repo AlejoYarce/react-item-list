@@ -8,6 +8,19 @@
   width: 100%;
 }
 
+.backButton {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  float: left;
+  font-size: 20px;
+  height: 30px;
+  margin: 0px 20px;
+  margin-top: -7px;
+  width: 30px;
+}
+
 .cartButton {
   background-color: transparent;
   border: none;

@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
+import { Switch, Route } from 'react-router-dom';
 
-import Layout from './components/Layout/Layout';
 import ItemList from './pages/ItemList/ItemList';
+import SelectedItems from './pages/SelectedItems/SelectedItems';
 
 class App extends Component {
   render() {
     return (
-      <Layout>
-        <ItemList />
-      </Layout>
+      <Switch>
+        <Route path='/' exact component={ItemList} />
+        <Route path='/selected-items' component={SelectedItems} />
+      </Switch>
     );
   }
 }

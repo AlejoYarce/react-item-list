@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import axios from '../../axios';
 import Item from '../../components/Item/Item';
 import Spinner from '../../components/Spinner/Spinner';
+import Layout from '../../components/Layout/Layout';
 
 class ItemList extends Component {
   componentDidMount() {
@@ -35,9 +36,11 @@ class ItemList extends Component {
       });
     }
     return (
-      <div>
-        {renderItems}
-      </div>
+      <Layout routerProps={this.props}>
+        <div>
+          {renderItems}
+        </div>
+      </Layout>
     );
   };
 };

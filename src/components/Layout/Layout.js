@@ -8,7 +8,7 @@ class Layout extends Component {
   render() {
     return (
       <Aux>
-        <Toolbar />
+        <Toolbar routerProps={this.props.routerProps} />
         <div className='mainContainer'>
           {this.props.children}
         </div>
